@@ -9,4 +9,5 @@ if someone enters your website at the 'http://127.0.0.1:8000/' address.'''
 ''''''
 urlpatterns = [
     path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
